@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Birthday Gift 🎂</title>
+    <link rel="stylesheet" href="so.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Great+Vibes&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="kasm.mp3" type="audio/mpeg">
+    </audio>
+
+  
+    <div class="scene">
+
+       
+        <div class="hint-label" id="hint">
+            <span class="hint-icon">👆</span>
+            <span>Tap to Open</span>
+        </div>
+
+        
+        <div class="wallet-flip" id="wallet-flip">
+
+          
+            <div class="face face-front">
+                <div class="leather-grain"></div>
+                <div class="stitching"></div>
+                <div class="wallet-logo">
+                    <div class="monogram-stars"><span>✦ ✦ ✦</span></div>
+                    <div class="monogram">For You</div>
+                    <div class="wallet-rule"></div>
+                </div>
+                <div class="clasp-bar"></div>
+            </div>
+
+          
+            <div class="face face-inside">
+
+              
+                <div class="page-dots">
+                    <button class="dot active" data-page="0" aria-label="Page 1"></button>
+                    <button class="dot" data-page="1" aria-label="Page 2"></button>
+                </div>
+
+               
+                <div class="pages-track" id="pages-track">
+
+                   
+                    <div class="page" id="page-photos">
+                        <p class="section-label">Memories</p>
+                        <div class="photo-stack" id="photo-stack">
+                            
+                            <div class="photo-card card-c">
+                                <img src="so1.jpeg" alt="Memory 3"
+                                    onerror="this.src='https://placehold.co/230x290/f5e0ea/906070?text=Memory+3'">
+                                <div class="photo-tag">🌸</div>
+                            </div>
+                            <div class="photo-card card-b">
+                                <img src="so2.jpeg" alt="Memory 2"
+                                    onerror="this.src='https://placehold.co/230x290/e0eaf5/607090?text=Memory+2'">
+                                <div class="photo-tag">💫</div>
+                            </div>
+                            <div class="photo-card card-a">
+                                <img src="so3.jpeg" alt="Memory 1"
+                                    onerror="this.src='https://placehold.co/230x290/f5ede0/b08060?text=Memory+1'">
+                                <div class="photo-tag">✨</div>
+                            </div>
+                        </div>
+                        <p class="tap-hint" id="tap-hint">Tap photo to flip through</p>
+                        <button class="ghost-btn" id="btn-to-pocket">See Something Special ›</button>
+                    </div>
+
+                   
+                    <div class="page" id="page-pocket">
+                        <p class="section-label">A Gift Inside</p>
+
+                        <div class="pocket-slot">
+                            <div class="pocket-felt"></div>
+                            <div class="slotted-photo">
+                                <img src="so5.jpeg" alt="Photo"
+                                    onerror="this.src='https://placehold.co/90x115/f5ede0/b08060?text=Photo'">
+                            </div>
+                        </div>
+
+                        <div class="gift-card-wrapper">
+                            <div class="gift-card" id="gift-card">
+
+                                <div class="card-face gcard-front">
+                                    <div class="card-chip"></div>
+                                    <div class="card-shimmer"></div>
+                                    <p class="card-open-label">Open Me ✨</p>
+                                    <p class="card-sub-label">tap to reveal</p>
+                                </div>
+
+                                <div class="card-face gcard-back">
+                                    <p class="handwriting">Happy Birthday Battakkk 🦆</p>
+                                    <p class="card-message">wishing you a very happy birthday !</p>
+                                    <button class="gold-pill small" id="reveal-btn">See Your Surprise 🌺</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swipe-nudge" id="swipe-nudge">Swipe or tap › for more</div>
+
+            </div>
+        </div>
+
+        
+        <div class="overlay" id="bouquet-overlay">
+            <div class="big-emoji bouncer">🎂</div>
+            <p class="overlay-title">With all my love...</p>
+            <button class="gold-pill" id="final-btn">✨ One Last Surprise</button>
+        </div>
+
+       
+        <div class="overlay" id="final-overlay">
+           
+            <canvas id="fireworks-canvas"></canvas>
+            <h1 class="birthday-heading" id="birthday-heading">🎂<br>HAPPY<br>BIRTHDAY!</h1>
+            <p class="birthday-sub" id="birthday-sub">Happy Birthday to my bhaiya ✨🦆 <br> May Allah fill your life with happiness, success, and many beautiful moments 🌸✨🍥</p>
+        </div>
+
+    </div>
+
+    <script src="so.js"></script>
+</body>
+
+</html>
